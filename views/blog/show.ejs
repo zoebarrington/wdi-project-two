@@ -1,0 +1,16 @@
+<main>
+  <h1><%= name %></h1>
+  <p>Day Number
+    <%= dayNumber %>
+    </p>
+    <img src="<%= image %>"/>
+    <% if (locals.isLoggedIn) { %>
+    <div class="buttons">
+      <form action="/blog/<%= _id %>?_method=DELETE" method="post">
+        <button class="button">Delete</button>
+      </form>
+      <a class="button" href="/blog/<%= _id %>/edit">Edit</a>
+    </div>
+  </main>
+
+  

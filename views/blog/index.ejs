@@ -1,0 +1,13 @@
+<main>
+  <h1>all blog posts</h1>
+  <div class="blogpost-grid">
+    <% blog.forEach(blog => {%>
+    <div>
+  <ahref="/blog/<%= blog.id %>">
+  <img width="200px" height="200px" src="<%= blog.image %>" />
+  <h3><%= blog.name %></h3>
+  </a>
+  </div>
+  <% }) %>
+</div>
+</main>
