@@ -1,0 +1,13 @@
+<main>
+  <h1>testing index2</h1>
+  <div class="blogpost-grid2">
+    <% blog.forEach(blog => {%>
+    <div>
+  <a href="/blog/<%= blog.id %>">
+  <img width="200px" height="200px" src="/images/<%= blog.image %>" />
+  <h3><%= blog.name %></h3>
+  </a>
+  </div>
+  <% }) %>
+</div>
+</main>

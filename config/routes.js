@@ -20,6 +20,8 @@ router.get('/about', function(req,res) {
 
 router.get('/blog', blogController.indexRoute);
 
+router.get('/blog/indexRoute2', blogController.indexRoute2);
+
 router.get('/blog/new', blogController.newRoute);
 
 //listen for post requests to /blog
@@ -33,5 +35,16 @@ router.get('/blog/:id/edit', blogController.editRoute);
 
 //delete route
 router.delete('/blog/:id', blogController.deleteRoute);
+
+router.route('/register')
+  .get(authController.registerFormRoute)
+  .post(authController.registerRoute);
+
+//LOGIN route
+router.route('/login')
+  .get(authController.loginFormRoute)
+  .post(authController.loginRoute);
+
+router.get('/logout', authController.logoutRoute);
 
 module.exports = router;
