@@ -10,15 +10,6 @@ function indexRoute(req, res) {
   });
 }
 
-function indexRoute2(req,res) {
-  Blog.find().then(function(result) {
-    const blogObject2 = {
-      blog: result
-    };
-    res.render('blog/indexRoute2', blogObject2);
-  });
-}
-
 //NEW route
 function newRoute(req,res) {
   res.render('blog/new');
@@ -69,7 +60,6 @@ function deleteRoute(req,res) {
 
 module.exports = {
   indexRoute: indexRoute,
-  indexRoute2: indexRoute2,
   showRoute: showRoute,
   newRoute: newRoute,
   createRoute: createRoute,

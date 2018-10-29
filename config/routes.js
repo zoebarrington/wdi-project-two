@@ -2,12 +2,6 @@ const blogController = require('../controllers/blogController');
 const authController = require('../controllers/authController');
 const router = require('express').Router();
 
-router.get('/register', authController.registerFormRoute);
-router.post('/register', authController.registerRoute);
-
-router.get('/login', authController.loginFormRoute);
-router.post('/login', authController.loginRoute);
-
 //homepage
 router.get('/', function(req,res) {
   res.render('home');
@@ -20,7 +14,7 @@ router.get('/about', function(req,res) {
 
 router.get('/blog', blogController.indexRoute);
 
-router.get('/blog/indexRoute2', blogController.indexRoute2);
+// router.get('/blog/indexRoute2', blogController.indexRoute2);
 
 router.get('/blog/new', blogController.newRoute);
 
@@ -36,15 +30,12 @@ router.get('/blog/:id/edit', blogController.editRoute);
 //delete route
 router.delete('/blog/:id', blogController.deleteRoute);
 
-router.route('/register')
-  .get(authController.registerFormRoute)
-  .post(authController.registerRoute);
+router.get('/register', authController.registerFormRoute);
+router.post('/register', authController.registerRoute);
 
-//LOGIN route
-router.route('/login')
-  .get(authController.loginFormRoute)
-  .post(authController.loginRoute);
+router.get('/login', authController.loginFormRoute);
+router.post('/login', authController.loginRoute);
 
-router.get('/logout', authController.logoutRoute);
+// router.get('/logout', authController.logoutRoute);
 
 module.exports = router;
