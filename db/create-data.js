@@ -9,13 +9,14 @@ const blogData = [{
   name: 'Intro',
   dayNumber: 0,
   distance: 0,
-  image: 'images/gablog1.jpeg',
+  image: 'public/images/gablog1.jpeg',
   blogContent: 'hello'
 }];
 
 Blog
   .create(blogData)
   .then(result => {
+
     console.log(`created ${result.length} blogposts!`);
     mongoose.connection.close();
   });

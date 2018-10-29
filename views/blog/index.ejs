@@ -3,8 +3,8 @@
   <div class="blogpost-grid">
     <% blog.forEach(blog => {%>
     <div>
-  <ahref="/blog/<%= blog.id %>">
-  <img width="200px" height="200px" src="<%= blog.image %>" />
+  <a href="/blog/<%= blog.id %>">
+  <img width="200px" height="200px" src="/images/<%= blog.image %>" />
   <h3><%= blog.name %></h3>
   </a>
   </div>

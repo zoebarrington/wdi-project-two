@@ -3,7 +3,7 @@
   <p>Day Number
     <%= dayNumber %>
     </p>
-    <img src="<%= image %>"/>
+    <img src="/images/<%= image %>"/>
     <% if (locals.isLoggedIn) { %>
     <div class="buttons">
       <form action="/blog/<%= _id %>?_method=DELETE" method="post">
@@ -11,6 +11,5 @@
       </form>
       <a class="button" href="/blog/<%= _id %>/edit">Edit</a>
     </div>
+    <% } %>
   </main>
-
-  
