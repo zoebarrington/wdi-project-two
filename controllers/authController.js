@@ -25,11 +25,12 @@ function loginFormRoute(req, res) {
 
 function loginRoute(req, res) {
   // req.body has the data from the login form
-  console.log('User is logging in', req.body);
   // Process the login.
+  console.log('User is logging in', req.body);
   // Check for an existing user
   User.findOne({ email: req.body.email })
     .then(result => {
+      console.log('User is logging in', result);
       // Hopefully, result contains a user
       if (!result) {
         // If there is no user
@@ -39,6 +40,7 @@ function loginRoute(req, res) {
         // ID into their locker (session).
         // (req.session is the locker)
         req.session.userId = result._id;
+        res.redirect('/');
       }
     });
   // Validate the password
@@ -46,9 +48,16 @@ function loginRoute(req, res) {
   // Otherwise redirect to login form
 }
 
+function logoutRoute(req, res) {
+  req.session.regenerate(function() {
+    res.redirect('/');
+  });
+}
+
 module.exports = {
   registerFormRoute: registerFormRoute,
   registerRoute: registerRoute,
   loginFormRoute: loginFormRoute,
-  loginRoute: loginRoute
+  loginRoute: loginRoute,
+  logoutRoute: logoutRoute
 };

@@ -1,1 +1,4 @@
 <h1>blog test!</h1>
+<% if (locals.isLoggedIn) { %>
+  <p>Welcome back <%= locals.currentUser.password %></p>
+<% } %>

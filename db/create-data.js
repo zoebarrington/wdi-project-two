@@ -7,9 +7,9 @@ Blog.collection.drop();
 
 const blogData = [{
   name: 'Intro',
-  dayNumber: 0,
+  dayNumber: -1,
   distance: 0,
-  image: 'public/images/gablog1.jpeg',
+  image: 'gablog1.jpeg',
   blogContent: 'hello'
 }];
 
