@@ -7,6 +7,7 @@ const session = require('express-session');
 const mongoose = require('mongoose');
 const env = require('./config/environment');
 const router = require('./config/routes');
+const auth = require('./lib/auth');
 
 mongoose.connect(env.dbUri);
 
@@ -20,6 +21,13 @@ app.use(session({ secret: 'shh...', resave: false, saveUninitialized: false }));
 
 app.use(express.static('public'));
 
+
+// app.use('*', function(req, res, next) {
+//   console.log('Incoming request:', req.method, req.originalUrl);
+//   next();
+// });
+app.use('*', auth.checkAuthStatus);
 app.use(router);
+
 
 app.listen(env.port, () => console.log(`Express is listening on port ${env.port}`));

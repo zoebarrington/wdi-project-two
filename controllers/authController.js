@@ -26,7 +26,7 @@ function loginFormRoute(req, res) {
 function loginRoute(req, res) {
   // req.body has the data from the login form
   // Process the login.
-  console.log('User is logging in', req.body);
+  // console.log('User is logging in', req.body);
   // Check for an existing user
   User.findOne({ email: req.body.email })
     .then(result => {
@@ -39,6 +39,7 @@ function loginRoute(req, res) {
         // We've found a user in the database! Write the user's
         // ID into their locker (session).
         // (req.session is the locker)
+        console.log('User is logging in lalala', req.body);
         req.session.userId = result._id;
         res.redirect('/');
       }

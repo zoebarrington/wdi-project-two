@@ -5,6 +5,7 @@
     <%= dayNumber %>
     </p>
     <img src="/images/<%= image %>"/>
+    <p><%= blogContent %></p>
     <% if (locals.isLoggedIn) { %>
     <div class="buttons">
       <form action="/blog/<%= _id %>?_method=DELETE" method="post">
