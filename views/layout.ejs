@@ -3,23 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>blog!!</title>
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
     <header>
       <nav>
-        <ul>
-          <li><a href="/about">About</a></li>
-          <li><a href="/">Home</a></li>
-          <li><a href="/blog/new">Write a blogpost</a></li>
-          <li><a href="/blog">All the blogposts</a></li>
-          <li><a href="/register">Sign up for more action</a></li>
+          <a class="navbuttons" href="/about">ABOUT</a>
+          <a class="navbuttons" href="/">HOME</a>
+          <a class="navbuttons" href="/blog/new">WRITE A BLOGPOST</a>
+          <a class="navbuttons" href="/blog">ALL BLOGPOSTS</a>
           <% if (!locals.isLoggedIn) { %>
-          <li><a href="/login">Log In</a></li>
-        <li><a href="/register">Sign Up</a><li>
+          <a class="navbuttons" href="/login">LOGIN</a>
+        <a class="navbuttons" href="/register">SIGN UP</a>
         <% } else { %>
-          <li><a href="/logout">Logout</a><li>
+          <a class="navbuttons" href="/logout">LOGOUT</a>
             <% } %>
-        </ul>
       </nav>
     </header>
 

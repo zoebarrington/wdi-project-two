@@ -26,8 +26,10 @@ router.post('/blog', secureRoute, blogController.createRoute);
 //show route
 router.get('/blog/:id', blogController.showRoute);
 
-//update route
+//edit route
 router.get('/blog/:id/edit', blogController.editRoute);
+
+router.put('/blog/:id', blogController.updateRoute);
 
 //delete route
 router.delete('/blog/:id', secureRoute, blogController.deleteRoute);
