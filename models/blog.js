@@ -5,7 +5,14 @@ const blogSchema = mongoose.Schema({
   dayNumber: Number,
   distance: String,
   image: String,
-  blogContent: String
+  blogContent: String,
+  ratings: [
+    {
+      comment: String,
+      username: String,
+      score: Number
+    }
+  ]
 });
 
 const blogModel = mongoose.model('Blog', blogSchema);

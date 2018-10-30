@@ -3,15 +3,39 @@
   <h1><%= name %></h1>
   <p>Day Number
     <%= dayNumber %>
-    </p>
-    <img src="/images/<%= image %>"/>
-    <p><%= blogContent %></p>
-    <% if (locals.isLoggedIn) { %>
+  </p>
+  <img src="/images/<%= image %>"/>
+  <p><%= blogContent %></p>
+  <% if (locals.isLoggedIn) { %>
     <div class="buttons">
-      <form action="/blog/<%= _id %>?_method=DELETE" method="post">
-        <button class="button">Delete</button>
-      </form>
-      <a class="button" href="/blog/<%= _id %>/edit">Edit</a>
+    <form action="/blog/<%= _id %>?_method=DELETE" method="post">
+    <button class="button">Delete</button>
+    </form>
+    <a class="button" href="/blog/<%= _id %>/edit">Edit</a>
+      </div>
+    <div>
+      <% ratings.forEach(rating => { %>
+        <div>
+          <span style="font-weight: bold;"><%= rating.username %></span>
+          <span><%= rating.score %></span>
+        </div>
+        <div>
+          <span><%= rating.comment %></span>
+          <span>
+            <form method="POST" action="/blog/<%= _id %>/ratings/<%= rating._id %>?_method=DELETE">
+              <button>x</button>
+            </form>
+          </span>
+        </div>
+      <% }) %>
     </div>
-    <% } %>
-  </main>
+    <div>
+      <form method="POST" action="/blog/<%= _id %>/ratings">
+        <textarea name="comment"></textarea>
+        <input name="username" type="hidden" value="<%= locals.currentUser.username %>"/>
+        <input name="score" type="number" min="0" max="5"/>
+        <button>Rate this blogpost!</button>
+      </form>
+    </div>
+  <% } %>
+</main>
