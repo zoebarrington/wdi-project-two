@@ -5,6 +5,7 @@ const blogSchema = mongoose.Schema({
   dayNumber: Number,
   distance: String,
   image: String,
+  shortSummary: String,
   blogContent: String,
   ratings: [
     {

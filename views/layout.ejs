@@ -2,21 +2,22 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>blog!!</title>
+    <title>CROSS CANADA CYCLE</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
   </head>
   <body>
     <header>
       <nav>
           <a class="navbuttons" href="/about">ABOUT</a>
           <a class="navbuttons" href="/">HOME</a>
-          <a class="navbuttons" href="/blog/new">WRITE A BLOGPOST</a>
-          <a class="navbuttons" href="/blog">ALL BLOGPOSTS</a>
+          <a class="navbuttons" href="/blog">BLOG</a>
           <% if (!locals.isLoggedIn) { %>
           <a class="navbuttons" href="/login">LOGIN</a>
         <a class="navbuttons" href="/register">SIGN UP</a>
         <% } else { %>
           <a class="navbuttons" href="/logout">LOGOUT</a>
+          <a class="navbuttons" href="/blog/new">WRITE A BLOGPOST</a>
             <% } %>
       </nav>
     </header>

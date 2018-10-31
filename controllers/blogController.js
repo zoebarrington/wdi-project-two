@@ -27,7 +27,6 @@ function showRoute(req, res) {
   //get blogpost out of the database using its id
   //then get a particular blog post out then render an ejs file
   Blog.findById(req.params.id).then(result => {
-    console.log('===========>', result);
     res.render('blog/show', result);
   });
 }

@@ -3,10 +3,75 @@ nav {
   text-align: center;
   text-decoration: none;
   font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
 }
 
 .navbuttons {
   text-decoration: none;
   font-family: Montserrat, sans-serif;
   color: black;
+}
+
+.navbuttons:hover {
+  color: steelblue;
+}
+
+.header-title {
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+}
+
+.register-form {
+  font-family: Montserrat, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text {
+  font-family: Montserrat, sans-serif;
+}
+
+footer {
+  font-family: Montserrat, sans-serif;
+}
+
+.fadein img {
+    position:absolute;
+    /* left:-65px;
+    top:0; */
+    align-items: center;
+    width: 30%;
+    height: auto;
+    -webkit-animation-name: fade;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 6s;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+
+@-webkit-keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+
+#fade2 {
+    -webkit-animation-delay: -6s;
+}
+#fade3 {
+    -webkit-animation-delay: -3s;
 }
