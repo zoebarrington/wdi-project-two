@@ -6,6 +6,14 @@ nav {
   display: flex;
   justify-content: space-around;
   padding: 20px;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+main {
+margin-top: 60px;
 }
 
 .navbuttons {
@@ -40,10 +48,10 @@ footer {
 
 .fadein img {
     position:absolute;
-    /* left:-65px;
-    top:0; */
+    left:150px;
+    top:150px;
     align-items: center;
-    width: 30%;
+    width: 25%;
     height: auto;
     -webkit-animation-name: fade;
     -webkit-animation-iteration-count: infinite;
@@ -69,9 +77,119 @@ footer {
 }
 
 
-#fade2 {
+#fade1 {
     -webkit-animation-delay: -6s;
 }
-#fade3 {
+#fade2 {
     -webkit-animation-delay: -3s;
+}
+
+footer {
+  background-color: #abc994;
+  height: 100px;
+  margin-bottom: none;
+}
+
+.home {
+  height: 1000px;
+}
+
+.fadein2 img {
+    position:absolute;
+    left:520px;
+    top:150px;
+    align-items: center;
+    width: 25%;
+    height: auto;
+    -webkit-animation-name: fade;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 6s;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+
+@-webkit-keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+
+#fade6 {
+    -webkit-animation-delay: -6s;
+}
+#fade4 {
+    -webkit-animation-delay: -3s;
+}
+
+.fadein3 img {
+    position:absolute;
+    left:890px;
+    top:150px;
+    align-items: center;
+    width: 25%;
+    height: auto;
+    -webkit-animation-name: fade;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 6s;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+
+@-webkit-keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+
+#fade8 {
+    -webkit-animation-delay: -6s;
+}
+#fade9 {
+    -webkit-animation-delay: -3s;
+}
+
+.login {
+  text-align: center;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  margin-left: 500px;
+}
+
+.about-image {
+  width: 300px;
+  height: 300px;
+}
+
+.header-title {
+  margin-top: 60px;
+}
+
+#login-page {
+  background-image: url('/images/road image.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }

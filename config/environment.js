@@ -1,5 +1,6 @@
-const dbUri = 'mongodb://localhost/cycleblog';
-const port = 4000;
+const port = process.env.PORT || 4000;
+const dbUri = process.env.MONGODB_URI || 'mongodb://localhost/cycleblog';
+
 
 module.exports = {
   dbUri: dbUri,

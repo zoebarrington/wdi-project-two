@@ -1,4 +1,3 @@
-
 <main>
   <h1><%= name %></h1>
   <p class="text">Day Number:
@@ -6,43 +5,43 @@
   </p>
   <p class="text">Distance Cycled:
     <%= distance %>
-    </p>
+  </p>
   <div class="columns is-desktop">
     <div class="column is-6"><img src="/images/<%= image %>"/></div>
     <div class="column is-6"<p class="text"><%= blogContent %></p>
-    </div>
-    <div class="editing-buttons">
-      <% if (locals.isLoggedIn) { %>
-        <div class="buttons">
-          <form action="/blog/<%= _id %>?_method=DELETE" method="post">
-            <button class="button">Delete</button>
-          </form>
-          <a class="button" href="/blog/<%= _id %>/edit">Edit</a>
-        </div>
-        <div>
-          <% ratings.forEach(rating => { %>
-            <div>
-              <span style="font-weight: bold;"><%= rating.username %></span>
-              <span><%= rating.score %></span>
-            </div>
-            <div>
-              <span><%= rating.comment %></span>
-              <span>
-                <form method="POST" action="/blog/<%= _id %>/ratings/<%= rating._id %>?_method=DELETE">
-                  <button>x</button>
-                </form>
-              </span>
-            </div>
-            <% }) %>
+      <div class="editing-buttons">
+        <% if (locals.isLoggedIn) { %>
+          <div class="buttons">
+            <form action="/blog/<%= _id %>?_method=DELETE" method="post">
+              <button class="button">Delete</button>
+            </form>
+            <a class="button" href="/blog/<%= _id %>/edit">Edit</a>
           </div>
           <div>
-            <form method="POST" action="/blog/<%= _id %>/ratings">
-              <textarea name="comment"></textarea>
-              <input name="username" type="hidden" value="<%= locals.currentUser.username %>"/>
-              <input name="score" type="number" min="0" max="5"/>
-              <button>Rate this blogpost!</button>
-            </form>
-          </div>
-          <% } %>
-        </div>
-      </main>
+            <% ratings.forEach(rating => { %>
+              <div>
+                <span style="font-weight: bold;"><%= rating.username %></span>
+                <span><%= rating.score %></span>
+              </div>
+              <div>
+                <span><%= rating.comment %></span>
+                <span>
+                  <form method="POST" action="/blog/<%= _id %>/ratings/<%= rating._id %>?_method=DELETE">
+                    <button>x</button>
+                  </form>
+                </span>
+              </div>
+              <% }) %>
+            </div>
+            <div>
+              <form method="POST" action="/blog/<%= _id %>/ratings">
+                <textarea name="comment"></textarea>
+                <input name="username" type="hidden" value="<%= locals.currentUser.username %>"/>
+                <input name="score" type="number" min="0" max="5"/>
+                <button>Rate this blogpost!</button>
+              </form>
+            </div>
+            <% } %>
+      </div>
+    </div>
+</main>
