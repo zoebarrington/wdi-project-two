@@ -5,9 +5,9 @@
   "main": "app.js",
   "license": "MIT",
   "scripts": {
-    "seed":"node db/create-data",
-    "start":"node app",
-    "start:dev":"nodemon"
+    "seed": "node db/create-data",
+    "start": "node app",
+    "start:dev": "nodemon"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
