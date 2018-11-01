@@ -24,7 +24,7 @@ margin-top: 60px;
 }
 
 .navbuttons:hover {
-  color: black;
+  color: steelblue;
 }
 
 .header-title {
@@ -40,7 +40,7 @@ margin-top: 60px;
 }
 
 .text {
-  font-family: Montserrat, sans-serif;
+  font-family: Montserrat,sans-serif;
 }
 
 footer {
@@ -59,7 +59,7 @@ footer {
     -webkit-animation-duration: 6s;
     animation-name: fade;
     animation-iteration-count: infinite;
-    animation-duration: 10s;
+    animation-duration: 8s;
 }
 
 @-webkit-keyframes fade {
@@ -107,7 +107,7 @@ footer {
     -webkit-animation-duration: 6s;
     animation-name: fade;
     animation-iteration-count: infinite;
-    animation-duration: 10s;
+    animation-duration: 8s;
 }
 
 @-webkit-keyframes fade {
@@ -145,7 +145,7 @@ footer {
     -webkit-animation-duration: 6s;
     animation-name: fade;
     animation-iteration-count: infinite;
-    animation-duration: 10s;
+    animation-duration: 8s;
 }
 
 @-webkit-keyframes fade {
@@ -173,7 +173,6 @@ footer {
 
 .login {
   text-align: center;
-  margin-top: 100px;
   display: flex;
   flex-direction: column;
   width: 100px;
@@ -185,15 +184,15 @@ footer {
   height: 300px;
 }
 
-/* .header-title {
+.header-title {
   margin-top: 60px;
-} */
+}
 
 #login-page {
   background-image: url('/images/panorama.jpg');
   background-repeat: no-repeat;
   background-size: contain;
-  height: 1000px;
+  height: 900px;
 }
 
 #about-page {
@@ -202,9 +201,48 @@ footer {
   background-size: cover;
 }
 
-
-
 .about {
   margin-top: 70px;
   margin-left: 300px;
+}
+
+.container {
+  margin-top: 200px;
+}
+
+#show-header {
+  font-size: 50px;
+  font-family: Montserrat,sans-serif;
+}
+
+.showpage {
+  margin-left: 50px;
+  margin-top: 100px;
+}
+
+.button {
+  background-color: lightgrey;
+  border: grey solid 1.2px;
+  margin-top: 40px;
+  font-family: Montserrat,sans-serif;
+  font-size: 15px;
+}
+
+#edit-button {
+  margin-left: 20px;
+}
+
+#rating-button {
+  background-color: lightgrey;
+  border: grey solid 1.2px;
+  font-family: Montserrat,sans-serif;
+  font-size: 13px;
+}
+
+.showpage, #shortSummary, h3 {
+  font-family: Montserrat,sans-serif;
+}
+
+#index-image:hover {
+  opacity: 0.6;
 }

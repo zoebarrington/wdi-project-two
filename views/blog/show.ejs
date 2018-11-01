@@ -1,21 +1,15 @@
-<main>
-  <h1><%= name %></h1>
-  <p class="text">Day Number:
-    <%= dayNumber %>
-  </p>
-  <p class="text">Distance Cycled:
-    <%= distance %>
-  </p>
+<main class="showpage">
+  <h1 id="show-header"><%= name %></h1>
   <div class="columns is-desktop">
-    <div class="column is-6"><img src="/images/<%= image %>"/></div>
-    <div class="column is-6"<p class="text"><%= blogContent %></p>
+    <div class="column is-4"><img src="/images/<%= image %>"/></div>
+    <div class="column is-4"<p class="text"><%= blogContent %></p>
       <div class="editing-buttons">
         <% if (locals.isLoggedIn) { %>
           <div class="buttons">
             <form action="/blog/<%= _id %>?_method=DELETE" method="post">
               <button class="button">Delete</button>
             </form>
-            <a class="button" href="/blog/<%= _id %>/edit">Edit</a>
+            <a class="button" id="edit-button" href="/blog/<%= _id %>/edit">Edit</a>
           </div>
           <div>
             <% ratings.forEach(rating => { %>
@@ -38,10 +32,18 @@
                 <textarea name="comment"></textarea>
                 <input name="username" type="hidden" value="<%= locals.currentUser.username %>"/>
                 <input name="score" type="number" min="0" max="5"/>
-                <button>Rate this blogpost!</button>
+                <button id="rating-button">Rate this blogpost!</button>
               </form>
             </div>
             <% } %>
-      </div>
-    </div>
-</main>
+          </div>
+        </div>
+        <div class="aside column is-2">
+          <p class="text">Day Number:
+            <%= dayNumber %>
+          </p>
+          <p class="text">Distance Cycled:
+            <%= distance %>
+          </p>
+        </div>
+      </main>

@@ -1,14 +1,25 @@
-<main class="index-page">
-  <h1>all blog posts</h1>
-  <div class="blogpost-grid columns is-multiline article-container">
+<section class="container">
+  <div class="columns is-multiline is-features">
     <% blog.sort().forEach(blog => {%>
-      <div class="column is-3">
+      <div class="column is-4">
         <a href="/blog/<%= blog.id %>">
-          <img width="300px" height="300px" src="/images/<%= blog.image %>" />
-          <h3><%= blog.name %></h3></a>
-          <h3>Day <%= blog.dayNumber %></h3>
-          <p><%= blog.shortSummary %></p>
+            <div class="card is-shady">
+              <div class="card-image">
+              <figure class="image is-4by3">
+                <img id="index-image" width="300px" height="300px" src="/images/<%= blog.image %>" />
+              </figure>
+              </a>
+            </div>
+          </div>
+        <div class="card-content">
+          <div class-"content">
+            <h3><strong><%= blog.name %></strong></h3>
+            <h3>Day <%= blog.dayNumber %></h3>
+            <p id="shortSummary"><%= blog.shortSummary %></p>
+            <a href="/blog/<%= blog.id %>"><span class="button is-link modal-button" data-target="modal-image2">Got to post</span></a>
+          </div>
         </div>
-        <% }) %>
       </div>
-    </main>
+      <% }) %>
+    </div>
+  </section>
