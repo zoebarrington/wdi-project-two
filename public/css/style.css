@@ -3,14 +3,13 @@ nav {
   text-align: center;
   text-decoration: none;
   font-weight: bold;
-  display: flex;
-  justify-content: space-around;
   padding: 20px;
   position: fixed;
   top: 0;
   overflow: hidden;
   width: 100%;
   background-color: black;
+  height: 70px;
 }
 
 main {
@@ -24,12 +23,30 @@ margin-top: 60px;
 }
 
 .navbuttons:hover {
-  color: steelblue;
+  color: red;
+}
+
+#about-card {
+  margin-top: 200px;
 }
 
 .header-title {
-  font-family: Montserrat, sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-size: 60px;
+  color: black;
   text-align: center;
+}
+
+#show-header {
+  font-family: 'Oswald', sans-serif;
+  font-size: 60px;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#index-header {
+  margin-top: 50px;
 }
 
 .register-form {
@@ -79,10 +96,10 @@ footer {
 
 
 #fade1 {
-    -webkit-animation-delay: -6s;
+    -webkit-animation-delay: -4s;
 }
 #fade2 {
-    -webkit-animation-delay: -3s;
+    -webkit-animation-delay: -2s;
 }
 
 footer {
@@ -127,10 +144,10 @@ footer {
 
 
 #fade6 {
-    -webkit-animation-delay: -6s;
+    -webkit-animation-delay: -4s;
 }
 #fade4 {
-    -webkit-animation-delay: -3s;
+    -webkit-animation-delay: -2s;
 }
 
 .fadein3 img {
@@ -165,10 +182,10 @@ footer {
 
 
 #fade8 {
-    -webkit-animation-delay: -6s;
+    -webkit-animation-delay: -4s;
 }
 #fade9 {
-    -webkit-animation-delay: -3s;
+    -webkit-animation-delay: -2s;
 }
 
 .login {
@@ -180,13 +197,15 @@ footer {
 }
 
 .about-image {
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
 }
 
-.header-title {
-  margin-top: 60px;
+#about-content {
+  width: 300px;
 }
+
+
 
 #login-page {
   background-image: url('/images/panorama.jpg');
@@ -195,25 +214,13 @@ footer {
   height: 900px;
 }
 
-#about-page {
+#about {
   background-image: url('/images/panorama.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  margin-top: 50px;
 }
 
-.about {
-  margin-top: 70px;
-  margin-left: 300px;
-}
-
-.container {
-  margin-top: 200px;
-}
-
-#show-header {
-  font-size: 50px;
-  font-family: Montserrat,sans-serif;
-}
 
 .showpage {
   margin-left: 50px;
@@ -243,6 +250,32 @@ footer {
   font-family: Montserrat,sans-serif;
 }
 
+#shortSummary {
+  width: 300px;
+}
+
 #index-image:hover {
   opacity: 0.6;
+}
+
+#about {
+    background-image: url('/images/panorama.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 900px;
+
+}
+
+.card-content {
+  width: 660px;
+}
+
+.logo-name {
+  font-family:'Oswald', sans-serif;
+  color: white;
+}
+
+#map {
+  margin-top: 300px;
+  margin-left: 350px;
 }

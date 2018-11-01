@@ -6,11 +6,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">  <body>
+<link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
+<body>
     <header>
-      <nav>
-        <a class="navbuttons" href="/"><img width="30px" height="30px" src="/images/mapleleaf.png"></a>
-          <a class="navbuttons" href="/about">ABOUT</a>
+      <nav class="columns">
+        <div class="logo-name column is 2" href="/"><img width="30px" height="30px" src="/images/mapleleaf.png">ALL THE GEAR, NO IDEA</div>
+        <div class="column is-5"></div>
+          <div class="column is-4"><a class="navbuttons" href="/about">ABOUT</a>
           <a class="navbuttons" href="/">HOME</a>
           <a class="navbuttons" href="/blog">BLOG</a>
           <% if (!locals.isLoggedIn) { %>
@@ -20,6 +23,7 @@
           <a class="navbuttons" href="/logout">LOGOUT</a>
           <a class="navbuttons" href="/blog/new">WRITE A BLOGPOST</a>
             <% } %>
+          </div>
       </nav>
     </header>
 
