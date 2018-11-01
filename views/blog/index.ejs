@@ -1,4 +1,4 @@
-<main>
+<main class="index-page">
   <h1>all blog posts</h1>
   <div class="blogpost-grid columns is-multiline article-container">
     <% blog.sort().forEach(blog => {%>
@@ -8,7 +8,7 @@
           <h3><%= blog.name %></h3></a>
           <h3>Day <%= blog.dayNumber %></h3>
           <p><%= blog.shortSummary %></p>
+        </div>
+        <% }) %>
       </div>
-  <% }) %>
-</div>
-</main>
+    </main>

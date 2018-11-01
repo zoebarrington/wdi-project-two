@@ -10,6 +10,7 @@ nav {
   top: 0;
   overflow: hidden;
   width: 100%;
+  background-color: black;
 }
 
 main {
@@ -19,11 +20,11 @@ margin-top: 60px;
 .navbuttons {
   text-decoration: none;
   font-family: Montserrat, sans-serif;
-  color: black;
+  color: white;
 }
 
 .navbuttons:hover {
-  color: steelblue;
+  color: black;
 }
 
 .header-title {
@@ -184,12 +185,26 @@ footer {
   height: 300px;
 }
 
-.header-title {
+/* .header-title {
   margin-top: 60px;
-}
+} */
 
 #login-page {
-  background-image: url('/images/road image.jpg');
+  background-image: url('/images/panorama.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 1000px;
+}
+
+#about-page {
+  background-image: url('/images/panorama.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+
+
+.about {
+  margin-top: 70px;
+  margin-left: 300px;
 }
