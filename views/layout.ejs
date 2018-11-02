@@ -1,42 +1,69 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>ALL THE GEAR, NO IDEA</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
-<body>
+<head>
+  <meta charset="utf-8">
+  <title>ALL THE GEAR, NO IDEA</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
+  <body>
     <header>
       <nav class="columns">
         <div class="logo-name column is 2" href="/"><img width="30px" height="30px" src="/images/mapleleaf.png">ALL THE GEAR, NO IDEA</div>
         <div class="column is-5"></div>
-          <div class="column is-4"><a class="navbuttons" href="/about">ABOUT</a>
+        <div class="column is-4"><a class="navbuttons" href="/about">ABOUT</a>
           <a class="navbuttons" href="/">HOME</a>
           <a class="navbuttons" href="/blog">BLOG</a>
           <% if (!locals.isLoggedIn) { %>
-          <a class="navbuttons" href="/login">LOGIN</a>
-        <a class="navbuttons" href="/register">SIGN UP</a>
-        <% } else { %>
-          <a class="navbuttons" href="/logout">LOGOUT</a>
-          <a class="navbuttons" href="/blog/new">WRITE A BLOGPOST</a>
-            <% } %>
+            <a class="navbuttons" href="/login">LOGIN</a>
+            <a class="navbuttons" href="/register">SIGN UP</a>
+            <% } else { %>
+              <a class="navbuttons" href="/logout">LOGOUT</a>
+              <a class="navbuttons" href="/blog/new">WRITE A BLOGPOST</a>
+              <% } %>
+            </div>
+          </nav>
+        </header>
+
+        <%- body %>
+
+        <footer class="footer has-text-centered">
+          <div class="upper-footer">
+            <!-- <img class="footer-images" src="/images/home4.jpg"> -->
+            <img class="footer-images" src="/images/home3.jpg">
+            <img class="footer-images" src="/images/home2.jpg">
+            <img class="footer-images" src="/images/home1.jpg">
+            <img class="footer-images" src="/images/UNADJUSTEDNONRAW_thumb_457c.jpg">
+            <img class="footer-images" src="/images/home5.jpg">
+            <img class="footer-images" src="/images/home6.jpg">
+            <img class="footer-images" src="/images/home7.jpg">
+            <img class="footer-images" src="/images/home8.jpg">
+            <img class="footer-images" src="/images/home10.jpg">
+            <img class="footer-images" src="/images/home11.jpg">
+            <img class="footer-images" src="/images/home12.jpg">
+            <img class="footer-images" src="/images/home13.jpg">
+            <img class="footer-images" src="/images/home14.jpg">
+            <img class="footer-images" src="/images/home15.jpg">
+            <img class="footer-images" src="/images/home16.jpg">
+            <img class="footer-images" src="/images/home17.jpg">
+            <img class="footer-images" src="/images/home18.jpg">
+            <img class="footer-images" src="/images/home19.jpg">
+            <img class="footer-images" src="/images/home21.jpg">
+</div>
+
+          <div class="lower-footer">
+            <p>🚴🏻‍♀️</p>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
           </div>
-      </nav>
-    </header>
 
-    <%- body %>
 
-<footer class="footer has-text-centered">Made by Zoe
-                       <a href="#"><i class="fab fa-facebook"></i></a>
-                       <a href="#"><i class="fab fa-instagram"></i></a>
-                       <a href="#"><i class="fab fa-pinterest"></i></i></a>
-                       <a href="#"><i class="fab fa-twitter"></i></a>
+        </footer>
 
-       </footer>
+      </body>
 
-  </body>
-
-  </html>
+      </html>

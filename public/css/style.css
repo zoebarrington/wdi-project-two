@@ -36,6 +36,8 @@ margin-top: 60px;
   color: black;
   text-align: center;
   font-weight: bold;
+  position: sticky;
+  z-index: 1;
 }
 
 #route {
@@ -274,7 +276,20 @@ footer {
     background-repeat: no-repeat;
     background-size: contain;
     height: 900px;
+}
 
+#edit-page {
+  background-image: url('/images/panorama.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 900px;
+}
+
+#new-page {
+  background-image: url('/images/panorama.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 900px;
 }
 
 .card-content {
@@ -303,4 +318,15 @@ footer {
   height: 1000px;
   margin-top: 200px;
   margin-left: 200px;
+}
+
+.footer-images {
+  width: 70px;
+  height: 85px;
+  float: left;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
 }
