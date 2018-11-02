@@ -1,7 +1,9 @@
-<main class="home">
-<h1 class="header-title"><strong>ALL THE GEAR, NO IDEA</strong></h1>
+<main class="home hero is-white">
+  <div class="card" id="home-card">
+    <div class="home-content">
+<h1 class="header-title">ALL THE GEAR, NO IDEA</h1>
 <% if(locals.isLoggedIn) { %>
-  <p>Welcome back <%= locals.currentUser.username %></p>
+  <p id="welcomeback">Welcome back <%= locals.currentUser.username %>!</p>
 <% } %>
 <div class="all-fade-ins">
 <div class="fadein">
@@ -21,6 +23,9 @@
 </div>
 </div>
 <div id="map">
+  <h3 id="route">4,559 miles, 4 wheels and 1 tent...</h3>
   <img width="700px" height="650px" src="/images/maproute.jpg" alt="map">
+  </div>
+  </div>
   </div>
 </main>

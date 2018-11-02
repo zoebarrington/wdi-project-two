@@ -35,6 +35,14 @@ margin-top: 60px;
   font-size: 60px;
   color: black;
   text-align: center;
+  font-weight: bold;
+}
+
+#route {
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
 }
 
 #show-header {
@@ -66,9 +74,9 @@ footer {
 
 .fadein img {
     position:absolute;
-    left:150px;
+    left:90px;
     top:150px;
-    align-items: center;
+    /* align-items: center; */
     width: 25%;
     height: auto;
     -webkit-animation-name: fade;
@@ -109,12 +117,15 @@ footer {
 }
 
 .home {
-  height: 1000px;
+  background-image: url('/images/panorama.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 50px;
 }
 
 .fadein2 img {
     position:absolute;
-    left:520px;
+    left:360px;
     top:150px;
     align-items: center;
     width: 25%;
@@ -152,7 +163,7 @@ footer {
 
 .fadein3 img {
     position:absolute;
-    left:890px;
+    left:630px;
     top:150px;
     align-items: center;
     width: 25%;
@@ -276,6 +287,20 @@ footer {
 }
 
 #map {
-  margin-top: 300px;
-  margin-left: 350px;
+  text-align: center;
+  margin-top: 250px;
+}
+
+#welcomeback {
+  font-family:'Oswald', sans-serif;
+  font-size: 20px;
+  color: black;
+  margin-left: 90px;
+}
+
+#home-card {
+  width: 1000px;
+  height: 1000px;
+  margin-top: 200px;
+  margin-left: 200px;
 }
