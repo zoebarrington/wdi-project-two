@@ -299,6 +299,7 @@ footer {
 .logo-name {
   font-family:'Oswald', sans-serif;
   color: white;
+  font-size: 30px;
 }
 
 #map {
