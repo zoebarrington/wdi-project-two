@@ -61,3 +61,7 @@ To create a RESTful blog, restaurant review app or instagram clone. The app had 
 ## Featured Piece of Code no.1
 
 ## Featured Piece of Code no.2
+
+## Wins and Blockers
+
+## Future Features
