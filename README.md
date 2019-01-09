@@ -33,6 +33,7 @@ To create a RESTful blog, restaurant review app or instagram clone. The app had 
 ## Show Page  
 ![Show](screenshots/show-page.png)
 
+
 ## Technologies Used
 - JavaScript (ECMAScript 6)
 - SCSS with Bulma and CSS animation
@@ -56,6 +57,15 @@ To create a RESTful blog, restaurant review app or instagram clone. The app had 
 ## Approach Taken
 
 ### Wireframes
+
+## Home Page  
+![Home](screenshots/home-wireframe.png)
+
+#### About Page   
+![About-Wireframe](screenshots/about-wireframe.png)
+
+### Create Page  
+![Create](screenshots/create-wireframe.png)
 
 
 ## Featured Piece of Code no.1
