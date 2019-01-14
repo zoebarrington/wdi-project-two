@@ -5,15 +5,37 @@
 
 All the Gear, No Idea is a remake of the cycling blog that I wrote when I cycled across Canada in the summer of 2017. Users can sign in to write, edit, delete and comment/rate blogposts.
 
-All the Gear, No Idea is my second project from General Assembly's Web Development Immersive course. It was an individual project built within the space of a week. This project was my first attempt at backend technologies.
+All the Gear, No Idea is my second project from General Assembly's Web Development Immersive course. It was an individual project built within the space of a week. This project was my first attempt at backend technologies and took place over week 6 of the course.
+
+## Course Curriculum:
+### Week 5: Module Two   
+* Node.js
+* Express.js
+* EJS  
+* MongoDB
+* User Authentication
+
+*Full course curriculum available at bottom of page*
+
+***
 
 ## Brief
-To create a RESTful blog, restaurant review app or instagram clone. The app had to meet the following criteria:
+To design a full-stack Node app that must include:
 
-* Has a user model and user authentication
-* Allows users to edit, delete and add blogposts and blogpost comments
-* Has a blog model and a comments/rating model
+* At least two models
+* RESTful routes
+* User authentication
+* Allows users to edit, delete and add posts
 * Is styled with Bulma, but doesn't look like Bulma
+* Deployed on Heroku  
+* EJS for template creation
+* CSS framework on the front-end
+
+**Timeframe:** 1 week(October 2018)
+
+## Concept
+
+We were given three options to choose from - an Instagram clone, a restaurant review or a blogging site. I chose the blogging site and recreated the Wordpress blog I had written when I cycled across Canada.
 
 ## Home Page
 ![Homepage](screenshots/home-page.png)
@@ -56,6 +78,10 @@ To create a RESTful blog, restaurant review app or instagram clone. The app had 
 
 ## Approach Taken
 
+I had learnt from my first project that it was essential to reach MVP as soon as possible. With this in mind, I set out a clear plan of what MVP consisted of, using wireframes (see below).
+
+Once I had reached MVP, I then set out to add features, animations and styling to my site.
+
 ### Wireframes
 
 ## Home Page  
@@ -70,8 +96,17 @@ To create a RESTful blog, restaurant review app or instagram clone. The app had 
 
 ## Featured Piece of Code no.1
 
+
 ## Featured Piece of Code no.2
 
 ## Wins and Blockers
 
 ## Future Features
+
+My initial idea was to build a cycling site where the index page would link to many different cycle touring blogs. However, given the time frame I needed to be realistic, and decided to start with just one blog, and add more if I had time.
+
+Moving forward, I would like to develop my site into a blogging platform where any number of cyclists can add their blog to the site.
+
+Other features I would like to add:
+* Add maps so that readers can track where on the cycling route cyclists are
+* Add messaging so that readers can contact the cyclists and ask questions (this is a feature I would like to add having completed the course and learnt how to do messaging)
