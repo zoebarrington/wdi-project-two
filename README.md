@@ -101,6 +101,10 @@ Once I had reached MVP, I then set out to add features, animations and styling t
 
 ## Wins and Blockers
 
+## Bugs/Moving Forward  
+* Page features overlap nav bar when scrolling down
+* Any logged in user can edit/delete posts
+
 ## Future Features
 
 My initial idea was to build a cycling site where the index page would link to many different cycle touring blogs. However, given the time frame I needed to be realistic, and decided to start with just one blog, and add more if I had time.
@@ -109,4 +113,49 @@ Moving forward, I would like to develop my site into a blogging platform where a
 
 Other features I would like to add:
 * Add maps so that readers can track where on the cycling route cyclists are
+* Ensure that users can only edit/delete their own posts/comments
 * Add messaging so that readers can contact the cyclists and ask questions (this is a feature I would like to add having completed the course and learnt how to do messaging)
+
+***
+
+## Course Curriculum
+
+> **Week 1-3** | Module One  
+* HTML5
+* CSS3 and CSS Animation
+* Sass
+* JavaScript
+* jQuery
+
+> **Week 4** | Project One
+
+> **Week 5** | Module Two  
+* Node.js
+* Express.js
+* EJS
+* MongoDB
+* User Authentication  
+
+> **Week 6** | Project Two
+
+> **Week 7-8** | Module Three
+* AngularJS
+* Token Authentication & Session Authentication
+* Third-party APIs
+* Mocha and Chai
+
+> **Week 9** | Project Three
+
+> **Week 10-11** | Module Four
+* React
+* JSX
+* ES6
+
+>**Week 12** | Project Four
+
+***
+## Contact
+### Zoe Barrington  
+Email: zlfbarrington@gmail.com
+
+[Porfolio](zoebarrington.com) | [LinkedIn](https://www.linkedin.com/notifications/) | [GitHub](https://github.com/zoebarrington)
