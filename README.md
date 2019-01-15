@@ -1,11 +1,11 @@
 # All the Gear, No Idea
-**[Heroku](https://cross-canada-cycle-app.herokuapp.com/)**
-
-**[GitHub Repository](https://github.com/zoebarrington/wdi-project-two)**
 
 All the Gear, No Idea is a remake of the cycling blog that I wrote when I cycled across Canada in the summer of 2017. Users can sign in to write, edit, delete and comment/rate blogposts.
 
 All the Gear, No Idea is my second project from General Assembly's Web Development Immersive course. It was an individual project built within the space of a week. This project was my first attempt at backend technologies and took place over week 6 of the course.
+
+Launch on [Heroku](https://cross-canada-cycle-app.herokuapp.com/) or check out the GitHub
+[Repo](https://github.com/zoebarrington/wdi-project-two).
 
 ## Course Curriculum:
 ### Week 5: Module Two   
