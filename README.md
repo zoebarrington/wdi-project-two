@@ -44,7 +44,7 @@ We were given three options to choose from - an Instagram clone, a restaurant re
 ![About](screenshots/about-page.png)
 
 ## Login Page  
-![Login](screenshots/login.png)
+![Login](screenshots/canada-login.gif)
 
 ## Index Page  
 ![Index](screenshots/index.png)
