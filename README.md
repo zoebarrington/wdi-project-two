@@ -1,8 +1,8 @@
-# All the Gear, No Idea
+# **All the Gear, No Idea** <img src="public/images/mapleleaf.png" style="width: 45px;"/>
 
 All the Gear, No Idea is a remake of the cycling blog that I wrote when I cycled across Canada in the summer of 2017. Users can sign in to write, edit, delete and comment/rate blogposts.
 
-All the Gear, No Idea is my second project from General Assembly's Web Development Immersive course. It was an individual project built within the space of a week. This project was my first attempt at backend technologies and took place over week 6 of the course.
+All the Gear, No Idea is my second project from General Assembly's Web Development Immersive course. It was an individual project built within the space of a week. This project was my first attempt at backend technologies, and took place over week 6 of the course.
 
 Launch on [Heroku](https://cross-canada-cycle-app.herokuapp.com/) or check out the GitHub
 [Repo](https://github.com/zoebarrington/wdi-project-two).
@@ -22,14 +22,14 @@ Launch on [Heroku](https://cross-canada-cycle-app.herokuapp.com/) or check out t
 ## Brief
 To design a full-stack Node app that must include:
 
-* At least two models
-* RESTful routes
-* User authentication
-* Allows users to edit, delete and add posts
-* Is styled with Bulma, but doesn't look like Bulma
-* Deployed on Heroku  
-* EJS for template creation
-* CSS framework on the front-end
+* **At least two models**
+* **RESTful routes**
+* **User authentication**
+* **Allows users to edit, delete and add posts**
+* **Is styled with Bulma, but doesn't look like Bulma**
+* **Deployed on Heroku  **
+* **EJS for template creation**
+* **CSS framework on the front-end**
 
 **Timeframe:** 1 week(October 2018)
 
@@ -82,7 +82,7 @@ I had learnt from my first project that it was essential to reach MVP as soon as
 
 Once I had reached MVP, I then set out to add features, animations and styling to my site.
 
-### Wireframes
+# **Wireframes**
 
 ## Home Page  
 ![Home](screenshots/home-wireframe.png)
