@@ -94,11 +94,6 @@ Once I had reached MVP, I then set out to add features, animations and styling t
 ![Create](screenshots/create-wireframe.png)
 
 
-## Featured Piece of Code no.1
-
-
-## Featured Piece of Code no.2
-
 ## Wins and Blockers
 
 ## Bugs/Moving Forward  
