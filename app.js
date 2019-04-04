@@ -21,11 +21,6 @@ app.use(session({ secret: 'shh...', resave: false, saveUninitialized: false }));
 
 app.use(express.static('public'));
 
-
-// app.use('*', function(req, res, next) {
-//   console.log('Incoming request:', req.method, req.originalUrl);
-//   next();
-// });
 app.use('*', auth.checkAuthStatus);
 app.use(router);
 
