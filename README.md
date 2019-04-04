@@ -93,9 +93,6 @@ Once I had reached MVP, I then set out to add features, animations and styling t
 ### Create Page  
 ![Create](screenshots/create-wireframe.png)
 
-
-## Wins and Blockers
-
 ## Bugs/Moving Forward  
 * Page features overlap nav bar when scrolling down
 * Any logged in user can edit/delete posts
