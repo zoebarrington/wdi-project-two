@@ -79,7 +79,17 @@ We were given three options to choose from - an Instagram clone, a restaurant re
 
 # Featured Piece of Code
 
+```
+function createRoute(req, res) {
+  Blog.findById(req.params.blogId)
+    .then(blog => {
+      blog.ratings.push(req.body);
+      blog.save().then(() => res.redirect('/blog'));
+    });
+}
+```
 
+This piece of code is taken from the create route for ratings. This was a post MVP additional feature that I felt added a lot of value to my blog site. The route finds the blog post and then pushes the rating to the body of the post. It then saves it and redirects to the index page. 
 
 ## Approach Taken
 
