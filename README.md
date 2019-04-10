@@ -76,6 +76,11 @@ We were given three options to choose from - an Instagram clone, a restaurant re
 - Google Fonts  
 - Fontawesome
 
+
+# Featured Piece of Code
+
+
+
 ## Approach Taken
 
 I had learnt from my first project that it was essential to reach MVP as soon as possible. With this in mind, I set out a clear plan of what MVP consisted of, using wireframes (see below).
